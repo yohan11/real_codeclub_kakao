@@ -1,0 +1,8 @@
+.nav {
+    background-color: #f9f9fa; /*배ㅐ경 색을 설정합니다*/
+    padding: 20px 40px; /*상하 여백 20, 좌우 40*/
+}
+.nav__list {
+    display: flex; /*요소들을 가로로 배치합니다*/
+    justify-content: space-between; /*justify-content는 요소들을 가로축 방향으로 정렬하며, space-between은 요소 사이의 간격을 일정하게 만들어줍니다*/
+}
