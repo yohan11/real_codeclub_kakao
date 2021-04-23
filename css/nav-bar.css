@@ -1,3 +1,10 @@
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+
 .nav {
     position: fixed;
     bottom: 0;
@@ -14,20 +21,21 @@
 }
 
 .nav__link {
+    position: relative;
     color: #2e363e;
 }
 
 .nav__notification {
     background-color: tomato;
-    width: 30px;
-    height: 30px;
+    width: 20px;
+    height: 20px;
     border-radius: 15px;
+    color: white;
+    font-weight: 600;
+    left: 20px;
+    bottom: 15px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-weight: 600;
     position: absolute;
-    left: 15px;
-    bottom: 15px;
 }
