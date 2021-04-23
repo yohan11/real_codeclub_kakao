@@ -9,9 +9,25 @@
 }
 .nav__list {
     display: flex; /*요소들을 가로로 배치합니다*/
+    position: relative;
     justify-content: space-between; /*justify-content는 요소들을 가로축 방향으로 정렬하며, space-between은 요소 사이의 간격을 일정하게 만들어줍니다*/
 }
 
 .nav__link {
     color: #2e363e;
+}
+
+.nav__notification {
+    background-color: tomato;
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    position: absolute;
+    left: 15px;
+    bottom: 15px;
 }
