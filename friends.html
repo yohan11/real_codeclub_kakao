@@ -1,15 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="css/friends.css" />
+        <link rel="stylesheet" href="../css/styles.css" />
+        <link rel="stylesheet" href="../css/screens/friends.css" />
+        <link rel="stylesheet" href="../css/reset.css" />
+        <link rel="stylesheet" href="../css/components/user-component.css" />
+        <link rel="stylesheet" href="../css/components/screen-header.css" />
+        <link rel="stylesheet" href="../css/components/nav-bar.css" />
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Friends - Kokoa Clone</title>
     </head>
     <body>
         <header class="screen-header">
-            <!--화면 상단을 구성합니다-->
-            <h1 class="scscreen-header__icons">Friends</h1>
+            <h1 class="screen-header__title">Friends</h1>
             <div class="screen-header__icons">
                 <span><i class="fas fa-search fa-lg"></i></span>
                 <span><i class="fas fa-music fa-lg"></i></span>
@@ -17,36 +21,58 @@
             </div>
         </header>
 
-        <main class="friends">
-        <header class="friends__header">
-            <div class="friends__friend friend friend--lg">
-                <div class="friend__column">
-                <img src="images/myavatar.jpg"  class="g-avatar friend__avatar" />
-                <div class="friend__content">
-                    <span class="friend__name">
-                        JY Kim
-                    </span>
-                    <span class="friend__status">
-                        iamjunyeong
-                    </span>
+        <a id="friends-display-link">
+            <i class="fas fa-info-circle"></i> Friends' Names Display
+            <i class="fas fa-chevron-right fa-xs"></i>
+        </a>
+
+        <main class="friends-screen">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img
+                        src="../images/myavatar.jpg"
+                        class="user-component__avatar user-component__avatar--xl"
+                    />
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">JY Kim</h4>
+                    </div>
+                </div>
+
+                <div class="user-component__column"></div>
+            </div>
+            <div class="friends-screen__channel">
+                <div class="friends-screen__channel-header">
+                    <span>Channel</span>
+                    <i class="fas fa-chevron-up fa-xs"></i>
+                </div>
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img
+                            src="../images/avatar.jpg"
+                            class="user-component__avatar user-component__avatar--sm"
+                        />
+                        <div class="user-component__text">
+                            <h4
+                                class="user-component__title user-component__title--not-bold"
+                            >
+                                Channel
+                            </h4>
+                        </div>
+                    </div>
+                    <div class="user-component__column">
+                        <span>2</span>
+                        <i class="fas fa-chevron-right fa-xs"></i>
+                    </div>
                 </div>
             </div>
-            <div class="friend__column">
-                <div class="friend__now-listening">
-                    <span>그대에게(신해철)</span>
-                    <i class="fas fa-play"></i>
-                </div>
-            </div>
-            </div>
-        </header>
+        </main>
 
         <nav class="nav">
-            <!-- 카카오톡 하단 바를 구현합니다 -->
             <ul class="nav__list">
                 <li class="nav__btn">
                     <a class="nav__link" href="friends.html"
-                        ><i class="fas fa-user fa-2x"></i></a
-                    ><!--user아이콘을 클릭하면 friends.html화면으로 이동합니다-->
+                        ><i class="fas fa-user fa-2x"></i
+                    ></a>
                 </li>
                 <li class="nav__btn">
                     <a class="nav__link" href="#">
